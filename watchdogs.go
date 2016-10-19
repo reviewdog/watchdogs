@@ -20,6 +20,9 @@ func NewWatchdogs(p Parser, c CommentService, d DiffService) *Watchdogs {
 	return &Watchdogs{p: p, c: c, d: d}
 }
 
+func TestNewExportedFunc() {
+}
+
 // CheckResult represents a checked result of static analysis tools.
 // :h error-file-format
 type CheckResult struct {
