@@ -33,6 +33,8 @@ type CheckResult struct {
 	Lines   []string // Original error lines (often one line)
 }
 
+var TestExportedVar = 1
+
 type Parser interface {
 	Parse(r io.Reader) ([]*CheckResult, error)
 }
